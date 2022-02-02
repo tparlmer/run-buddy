@@ -1,0 +1,48 @@
+/* It is best practice to start with general css that defines the whole content with body */
+
+/* Tells every single element to not have a 
+margin or border unless explictly told to. Overrides default settings. 
+Asterisk is universal selector in CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif; /* Helvetica doesn't work on many Windows devices*/
+}
+
+/* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline; /* review display: inline; */
+}
+
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0; /* this means 7px of padding on top and bottom and 0px on left and right */
+}
+
+header nav ul li {
+    display: inline; /* Review display: inline;*/
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
